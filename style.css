@@ -1,16 +1,101 @@
+body {
+  background-color: #ece2e15b;
+  font-family: cursive;
+}
+.footer {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: hsl(0, 88%, 90%);
+  height: 20vh;
+  text-align: center;
+  border-radius: 4vh;
+}
+h1 {
+  padding-left: 50vh;
+}
+
+img {
+  padding-top: 2vh;
+  height: 25vh;
+}
 .container {
   display: grid;
-  grid-template-columns:repeat(3,auto);
-  gap: 10px;
-
+  grid-template-columns: repeat(3, auto);
+  gap: 3vh;
+  margin: 25vh;
 }
 
 .todo-id {
+  cursor: pointer;
   border: 1px groove #9061b4ff;
-  padding: 25px;
-  display:grid;
- grid-template-rows:auto auto ;
- text-align: center;
+  border-radius: 3vh;
+  padding: 3vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
   text-transform: capitalize;
-  background-color:#adc4cebd ;
+  background-color: #d3e0dc98;
+}
+.todo-id:hover {
+  background-color: #c7d6d2;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.edit-btn {
+  background-image: linear-gradient(
+    to right,
+    #d3e0dc 0%,
+    #fcd1d1 60%,
+    #ece2e1 100%
+  );
+  margin-right: 200px;
+  margin-top: 10px;
+
+  padding: 5px 5px;
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(52, 47, 47);
+
+  border-radius: 2vh;
+  display: block;
+}
+
+.edit-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+.delete-btn {
+  background-image: linear-gradient(
+    to right,
+    #fcd1d1 0%,
+    #d3e0dc 60%,
+    #ece2e1 100%
+  );
+  margin-right: 200px;
+  padding: 5px 5px;
+  margin-top: 5px;
+
+  transition: 0.5s;
+  background-size: 200% auto;
+
+  border-radius: 2vh;
+  display: block;
+}
+
+.delete-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: auto;
+  }
 }

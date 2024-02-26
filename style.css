@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns:repeat(3,auto);
+  gap: 10px;
+
+}
+
+.todo-id {
+  border: 1px groove #9061b4ff;
+  padding: 25px;
+  display:grid;
+ grid-template-rows:auto auto ;
+ text-align: center;
+  text-transform: capitalize;
+  background-color:#adc4cebd ;
+}
